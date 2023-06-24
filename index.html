@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title> WEATHER FORECAST </title>
+
+</head>
+<body>
+    <div class="container">
+        
+        <div class="current-info">
+            <div class="new">
+                <div class="wrapper">
+                    <header><i class='bx bx-left-arrow-alt'></i>Weather App</header>
+                    <section class="input-part">
+                      <p class="info-txt"></p>
+                      <div class="content">
+                        <input type="text" spellcheck="false" placeholder="Enter city name" required>
+                        <div class="separator"></div>
+                        <button>Get Device Location</button>
+                      </div>
+                    </section>
+                    <section class="weather-part">
+                      <img src="" alt="Weather Icon">
+                      <div class="temp">
+                        <span class="numb">_</span>
+                        <span class="deg">°</span>C
+                      </div>
+                      <div class="weather">_ _</div>
+                      <div class="location">
+                        <i class='bx bx-map'></i>
+                        <span>_, _</span>
+                      </div>
+                      <div class="bottom-details">
+                        <div class="column feels">
+                          <i class='bx bxs-thermometer'></i>
+                          <div class="details">
+                            <div class="temp">
+                              <span class="numb-2">_</span>
+                              <span class="deg">°</span>C
+                            </div>
+                            <p>Feels like</p>
+                          </div>
+                        </div>
+                        <div class="column humidity">
+                          <i class='bx bxs-droplet-half'></i>
+                          <div class="details">
+                            <span>_</span>
+                            <p>Humidity</p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+            </div>
+            <div class="data-container">
+                <div class="time" id="time">
+                    12:30 <span class="am-pm" id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Monday, 24 May
+                </div>
+                <div class="others" id="current-weather-items">
+                    
+                </div>
+            </div>
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">Asia/kathmandu</div>
+                <div id="id" class="country">NP</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="future-forecast">
+        <div class="today" id="current-temp">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon" class="w-icon">
+            <div class="other">
+                <div class="day">Monday</div>
+            <div class="temp">Night - 25.6&#176;C</div>
+            <div class="temp">DAy - 25.6&#176;C</div>
+            </div>
+        </div>
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item">
+                
+                <div class="day">Tue</div>
+                <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176;C</div>
+                <div class="temp">DAy - 25.6&#176;C</div>
+            </div>
+            <div class="weather-forecast-item" >
+                <div class="day">Wed</div>
+                <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176;C</div>
+                <div class="temp">DAy - 25.6&#176;C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Thur</div>
+                <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176;C</div>
+                <div class="temp">DAy - 25.6&#176;C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Fri</div>
+                <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176;C</div>
+                <div class="temp">DAy - 25.6&#176;C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Sat</div>
+                <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176;C</div>
+                <div class="temp">DAy - 25.6&#176;C</div>
+            </div>
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
